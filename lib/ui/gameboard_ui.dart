@@ -128,7 +128,9 @@ class PlayerInfoCard extends ConsumerWidget {
           children: [
             Text("#${player.playerNumber}"),
             Text(player.playerName),
-            Text("₹${player.moneyInPocket}\n")
+            Text("₹${player.moneyInPocket}"),
+            Container(color:Colors.red,child: Text("🏦₹${player.debt}")),
+            Container(color:Colors.green,child: Text("🤑₹${player.investment}"))
           ],
         ),
       ),
