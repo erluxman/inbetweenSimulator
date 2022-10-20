@@ -3,11 +3,13 @@ class GameBoard {
   final List<PlayingCard> cardsOnDeck;
   final int moneyOnBoard;
   final int handValue;
+  final bool isPaused;
   GameBoard({
     required this.players,
     required this.moneyOnBoard,
     required this.handValue,
     required this.cardsOnDeck,
+    required this.isPaused,
   });
 
   GameBoard copyWith({
@@ -15,11 +17,13 @@ class GameBoard {
     List<PlayingCard>? cardsOnDeck,
     int? moneyOnBoard,
     int? handValue,
+    bool? isPaused,
   }) {
     return GameBoard(
       players: players ?? this.players,
       moneyOnBoard: moneyOnBoard ?? this.moneyOnBoard,
       handValue: handValue ?? this.handValue,
+      isPaused: isPaused ?? this.isPaused,
       cardsOnDeck: cardsOnDeck ?? this.cardsOnDeck,
     );
   }

@@ -86,7 +86,7 @@ class GameBoardCenterInfoCard extends ConsumerWidget {
       ),
       margin: const EdgeInsets.all(8.0),
       child: SizedBox(
-        width: 100,
+        width: MediaQuery.of(context).size.width*0.6,
         height: 100,
         child: Center(
           child: Padding(

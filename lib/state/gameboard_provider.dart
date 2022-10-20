@@ -26,6 +26,7 @@ final GameBoard initialGameBoard = GameBoard(
   moneyOnBoard: 0,
   handValue: 5,
   cardsOnDeck: shuffledCards,
+  isPaused: true
 );
 final List<Player> initialPlayers = [
   Player(
